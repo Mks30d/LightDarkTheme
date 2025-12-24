@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:light_dark_theme/pages/home_page.dart';
+import 'package:light_dark_theme/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Light Dark Theme',
       debugShowCheckedModeBanner: false,
+      theme: lightMode,
+      darkTheme: darkMode,
       home: HomePage(),
     );
   }
